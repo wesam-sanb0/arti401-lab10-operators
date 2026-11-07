@@ -1,0 +1,69 @@
+Welcome to SWI-Prolog (threaded, 64 bits, version 10.0.2)
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
+Please run ?- license. for legal details.
+
+For online help and background, visit https://www.swi-prolog.org
+For built-in help, use ?- help(Topic). or ?- apropos(Word).
+
+97 ?- consult('C:/Users/wesam/Downloads/college/Artificial Intelligence Princi-FS02/Lab10/task1_shapes.pl').
+Warning: c:/users/wesam/downloads/college/artificial intelligence princi-fs02/lab10/task1_shapes.pl:21:
+Warning:    Clauses of area/4 are not together in the source-file
+Warning:    Earlier definition at c:/users/wesam/downloads/college/artificial intelligence princi-fs02/lab10/task1_shapes.pl:14
+Warning:    Current predicate: perimeter/4
+Warning:    Use :- discontiguous area/4. to suppress this message
+true.
+
+
+------ Task 1: Area and Perimeter ------
+
+98 ?- area(square, 5, A).
+A = 25.
+
+99 ?- perimeter(square, 5, P).
+P = 20.
+
+100 ?- area(rectangle, 4, 6, A).
+A = 24.
+
+101 ?- perimeter(rectangle, 4, 6, P).
+P = 20.
+
+102 ?- area(triangle, 10, 5, A).
+A = 25.0.
+
+103 ?- perimeter(triangle, 3, 4, 5, P).
+P = 12.
+
+
+------ Task 2: Login System ------
+
+101 ?- consult('C:/Users/wesam/Downloads/college/Artificial Intelligence Princi-FS02/Lab10/task2_login.pl').
+true.
+
+102 ?- login.
+
+--- LOGIN SYSTEM ---
+Enter Username: wesam.
+Enter Password: |: 1234.
+
+Login Successful!
+
+true.
+
+103 ?- login.
+
+--- LOGIN SYSTEM ---
+Enter Username: ali.
+Enter Password: |: wrong.
+
+Login Unsuccessful.
+Attempts remaining: 2
+Enter Username: |: admin.
+Enter Password: |: 123.
+
+Login Unsuccessful.
+Attempts remaining: 1
+
+Sorry, you exceeded the maximum number of attempts, try again later.
+
+true.

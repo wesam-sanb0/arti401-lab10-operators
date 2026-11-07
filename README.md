@@ -1,5 +1,5 @@
 # ARTI 401 — Lab Assignment 10
-## Graphs
+## Prolog Operators (Part II)
 
 **Course:** ARTI 401 — Artificial Intelligence Principles
 **Lab:** 10
@@ -7,24 +7,17 @@
 ### Files
 | File | Description |
 |------|-------------|
-| `graphs.pl` | Prolog program to find paths between cities using graph search |
-| `queries.txt` | Test queries and outputs for the path-finding logic |
+| `task1_shapes.pl` | Task 1: Calculate area and perimeter of shapes |
+| `task2_login.pl` | Task 2: Login system with max 3 attempts |
+| `queries.txt` | Test queries and outputs |
 
-### Lab Activity — Finding Paths Between Cities
-The task is to write a Prolog program that models the given graph of cities as facts and finds all possible paths between a starting city and a destination city.
-
-### Implementation Details
-- **Facts:** `edge(City1, City2)` defines the connections between cities.
-- **Rule `connected/2`:** Makes the edges bidirectional (undirected graph).
-- **Rule `travel/3`:** The main entry point that initializes the search.
-- **Rule `go/4`:** A recursive helper that performs Depth-First Search (DFS) while keeping track of visited cities to avoid infinite loops.
 
 ### How to Run
 ```prolog
-?- consult('graphs.pl').
+% Task 1
+?- consult('task1_shapes.pl').
+?- area(square, 5, A).
 
-% Find a path from Dammam to Madinah
-?- travel('Dammam', 'Madinah', P).
-
-% Find a path from Makkah to Riyadh
-?- travel('Makkah', 'Riyadh', P).
+% Task 2
+?- consult('task2_login.pl').
+?- login.
